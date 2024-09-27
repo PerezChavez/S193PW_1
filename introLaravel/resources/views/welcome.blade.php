@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    @vite(['resource/js/app.js']) <!-- Todos los archivos qie queramos con bootstrap deben tener esta ruta -->
+    @vite(['resources/js/app.js']) <!-- Todos los archivos qie queramos con bootstrap deben tener esta ruta -->
 
     <title>Document</title>
 </head>
