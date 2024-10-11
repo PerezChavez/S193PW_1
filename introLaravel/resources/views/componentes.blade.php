@@ -12,4 +12,7 @@ Soy el contenido del primero
 Otro gaaaaato!!!!!
 </x-Card>
 
+<x-Alert tipo="danger"> Rojo </x-Alert>
+<x-Alert tipo="warning"> Amarillo </x-Alert>
+
 @endsection
