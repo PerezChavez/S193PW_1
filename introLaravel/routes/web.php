@@ -31,3 +31,6 @@ Route::get('/form', [ControladorVistas::class, 'formulario'])->name('rutaform');
 
 
 Route::get('/consultar', [ControladorVistas::class, 'consulta'])->name('rutaclientes');
+
+Route::post('/enviarCliente', [ControladorVistas::class, 'procesarCliente'])->name('rutaEnviar');  //la parte de name no es importante cuando es post
+
