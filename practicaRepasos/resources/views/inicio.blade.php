@@ -43,6 +43,11 @@
             font-size: 1.5rem;
             color: #8e44ad;
         }
+        button {
+            background-color: #ffb3d9; 
+            color: #000; 
+            padding: 10px 20px
+        }
     </style>
 </head>
 <body>
@@ -51,7 +56,8 @@
     <div class="content-box">
         <h1>Carol Paola Chavez Piña</h1>
         <h2>Programación Web</h2>
-        <h3>S193 - Repaso Laravel</h3>
+        <h3> Repaso 1 Laravel <br> S193 </h3>
+        <a href="¨{{ route('rutarepaso1')}}" class="btn">repaso</a>
     </div>
 </div>
 

@@ -7,4 +7,4 @@ use Illuminate\Support\Facades\Route;
  });
 
 
-//Route::view('/','Inicio')->name('rutaInicio');
+Route::view('/repaso1','repaso1')->name('rutarepaso1');
