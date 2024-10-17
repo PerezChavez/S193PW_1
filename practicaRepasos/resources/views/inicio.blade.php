@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/js/app.js'])
     <title>Document</title>
     <style>
         body {
@@ -31,17 +32,14 @@
 
         h1 {
             font-size: 2.5rem;
-            color: #f41da2;
         }
 
         h2 {
             font-size: 2rem;
-            color: #e626af;
         }
 
         h3 {
             font-size: 1.5rem;
-            color: #8e44ad;
         }
         button {
             background-color: #ffb3d9; 
@@ -57,7 +55,7 @@
         <h1>Carol Paola Chavez Piña</h1>
         <h2>Programación Web</h2>
         <h3> Repaso 1 Laravel <br> S193 </h3>
-        <a href="¨{{ route('rutarepaso1')}}" class="btn">repaso</a>
+        <a href="¨{{ route('rutarepaso1')}}" class="btn btn-primary" >Repaso</a>
     </div>
 </div>
 
