@@ -33,4 +33,7 @@ class ControladorVistas extends Controller
         //return $peticion->url();
         return $peticion->ip();
     }
+    
 }
+
+

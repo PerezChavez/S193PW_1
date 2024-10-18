@@ -13,3 +13,4 @@ use App\Http\Controllers\ControladorRepaso;
 
 Route::get('/', [ControladorRepaso::class, 'inicio'])->name('rutainicio');
 Route::get('/repaso1', [ControladorRepaso::class, 'repaso1'])->name('rutarepaso1');
+Route::post('/calcularConversion', [ControladorRepaso::class, 'calcularConversion'])->name('rutafinal');
