@@ -55,7 +55,7 @@
         <h1>Carol Paola Chavez Piña</h1>
         <h2>Programación Web</h2>
         <h3> Repaso 1 Laravel <br> S193 </h3>
-        <a href="¨{{ route('rutarepaso1')}}" class="btn btn-primary" >Repaso</a>
+        <a href="{{ route('rutarepaso1')}}" class="btn btn-primary" >Repaso</a>
     </div>
 </div>
 
