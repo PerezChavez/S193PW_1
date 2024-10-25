@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\validadorCliente;
 
 class ControladorVistas extends Controller
 {
@@ -25,28 +26,26 @@ class ControladorVistas extends Controller
 
     }
 
-    public function procesarCliente(Request $peticion)
+    public function procesarCliente(validadorCliente $peticion)
     {
         //return 'Si llego la info del cliente :)'; //es una cadena de texto 
         // return $peticion->all();
         //return $peticion->path();
         //return $peticion->url();
        // return $peticion->ip();
-
        //RESPUESTAS DE REDIRECCIÓN 
-
     //return redirect('/'); //Redirecciona a inicio
     //return redirect()->route('rutaclientes'); //Redirecciona a ruta clientes
     //return back();
     //$id = [['usuario'=>1],['usuario'=>2]];
     //return view('formulario',compact('id'));
 
-    $validacion = $peticion->validate([
-        'txtnombre' =>'required|min:4|max:20',
-        'txtapellido' =>'required',
-        'txtcorreo' =>'required',
-        'txttelefono' =>'required|numeric',
-    ]);
+    //  $validacion = $peticion->validate([
+       // 'txtnombre' =>'required|min:4|max:20',
+        //'txtapellido' =>'required',
+        //'txtcorreo' =>'required',
+        //'txttelefono' =>'required|numeric',
+        //  ]);
     $usuario= $peticion->input('txtnombre');
 
     session()->flash('exito', 'Se guardó el usuario:'.$usuario);
