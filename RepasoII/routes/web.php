@@ -8,4 +8,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/form','FormularioLibro')->name('rutaform');
 Route::view('/','Inicio')->name('rutainicio');
+Route::view('/cons','Inicio')->name('rutaconsulta');
 
