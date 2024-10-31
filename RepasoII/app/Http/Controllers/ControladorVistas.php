@@ -20,7 +20,16 @@ class ControladorVistas extends Controller
 
     }
 
+    public function evaluarLibro(validarLibro $peticion)
+    {
+    $libro= $peticion->input('txtnombre');
+
+    session()->flash('exito', 'Se guardó el libro correctamente:'.$libro);
+    return to_route('rutaform');
+
+    }
     
+
 }
 
 
