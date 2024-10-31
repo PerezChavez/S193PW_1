@@ -4,12 +4,10 @@
 
 @section('contenido') 
 
-<x-Card encabezado="Componente" titulo="Dinamico" textoBoton="Guardar"> 
-Soy el contenido del primero
+<x-Card encabezado="Componente" titulo="Dinamico" textoBoton="Guardar">
 </x-Card>
 
 <x-Card encabezado="Componente 2" titulo="Dinamico 2" textoBoton="NO Guardar"> 
-Otro gaaaaato!!!!!
 </x-Card>
 
 <x-Alert tipo="danger"> Rojo </x-Alert>
