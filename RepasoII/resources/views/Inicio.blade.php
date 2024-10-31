@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>Bienvenido a nuestra biblioteca </h1>
-    <button href= "">Registrar Libro</button>
+    <a href= "{{ route('rutaform')}}">Registrar Libro</a>
 </body>
 </html>

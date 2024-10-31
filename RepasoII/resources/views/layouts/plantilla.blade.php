@@ -25,7 +25,7 @@
             <a class="nav-link {{ request()->routeIs('rutaform')?'text-warning':'' }}" href="{{ route('rutaform') }}" >{{ __('Registro cliente') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('rutaclientes') }}">{{ __('Consulta clientes') }}</a>
+            <a class="nav-link" href="">{{ __('Consulta clientes') }}</a>
           </li>
         </ul>
       </div>
