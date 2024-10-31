@@ -19,18 +19,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('rutaform') }}">Registrar Libro</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Consulta Libros</a>
-                    </li>
-                </ul>
+                    </ul>
             </div>
         </div>
     </nav>
 
     <div class="container mt-5">
         <h1>Bienvenido a nuestra biblioteca</h1>
-        <a href="{{ route('rutaform') }}" class="btn btn-primary">Registrar Libro</a>
-    </div>
+        </div>
 
     {{-- Pie de página --}}
     <footer class="bg-dark text-white text-center mt-5 p-3">

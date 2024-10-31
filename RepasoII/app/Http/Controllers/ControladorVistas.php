@@ -8,20 +8,15 @@ class ControladorVistas extends Controller
 {
 /* Usamos este controlador para administrar la lógica de las vistas*/
 
-    public function home()
+    public function inicio()
     {
         return view('inicio');
 
     }
 
-    public function formulario()
+    public function FormularioLibro()
     {
-        return view ('formulario');
-
-    }
-    public function consulta()
-    {
-        return view ('clientes');
+        return view ('FormularioLibro');
 
     }
 
