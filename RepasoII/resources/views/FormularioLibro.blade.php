@@ -60,7 +60,7 @@
 
         <div class="mb-3">
           <label for="ano" class="form-label">{{ __('Año') }}</label>
-          <input type="number" class="form-control" name="txtano" value="{{ old('txtano') }}">
+          <input type="number" class="form-control" name="txtano" value="{{ old('txtan') }}">
           <small class="text-danger fst-italic">{{ $errors->first('txtano') }}</small>
         </div>
 

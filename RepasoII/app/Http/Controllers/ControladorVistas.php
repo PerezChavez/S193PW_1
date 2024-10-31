@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\validarLibro;
 
 class ControladorVistas extends Controller
 {
@@ -20,9 +21,9 @@ class ControladorVistas extends Controller
 
     }
 
-    public function evaluarLibro(validarLibro $peticion)
+    public function procesarLibro(validarLibro $peticion)
     {
-    $libro= $peticion->input('txtnombre');
+    $libro= $peticion->input('txttitulo');
 
     session()->flash('exito', 'Se guardó el libro correctamente:'.$libro);
     return to_route('rutaform');
