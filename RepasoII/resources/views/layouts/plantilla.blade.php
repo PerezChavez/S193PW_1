@@ -33,6 +33,12 @@
   </nav>
   {{-- Finaliza navbar --}}
 
+  
     @yield('contenido')
 </body>
+
+{{-- Pie de página --}}
+    <footer class="bg-dark text-white text-center mt-5 p-3">
+        <p>Biblioteca Chavez &copy; {{ now()->format('d M Y') }}</p>
+    </footer>
 </html>

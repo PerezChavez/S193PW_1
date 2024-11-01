@@ -7,25 +7,24 @@
 
 <div class="container mt-5 col-md-6">
 
-@if(session('exito'))
+  @if(session('exito'))
   <x-Alert tipo="success">{{session('exito')}}</x-Alert>
   @endif
 
-   @session('exito')
-  <x-Alert tipo="warning">{{$value}}</x-Alert>
-  @endsession 
-
+  @session('exito')
+  <x-Alert tipo="danger">{{$value}}</x-Alert>
+  @endsession
 
   @session('exito')
-  {! <script>
-  Swal.fire({
-  title: "Respuesta Servidor!",
-  text: "{{$value}}",
-  icon: "success"
-  });
+  {!<script>
+    Swal.fire({
+      title: "Respuesta al usuario",
+      text: "{{$value}}",
+      icon: "success"
+    });
   </script>!}
-   @endsession
-   
+  @endsession
+
   <div class="card font-monospace">
 
     <div class="card-header fs-5 text-center text-primary">
@@ -93,10 +92,6 @@
 
   </div>
 </div>
-{{-- Pie de página --}}
-    <footer class="bg-dark text-white text-center mt-5 p-3">
-        <p>Biblioteca Chavez &copy; {{ date('d M Y') }}</p>
-    </footer>
 {{-- Finaliza Tarjeta con formulario --}}
 
 @endsection
