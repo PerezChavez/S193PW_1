@@ -12,6 +12,11 @@
   @endif
 
   @session('exito')
+  <x-Alert tipo="warning">{{$value}}</x-Alert>
+  @endsession
+
+
+  @session('exito')
   <x-Alert tipo="danger">{{$value}}</x-Alert>
   @endsession
 
@@ -62,7 +67,7 @@
 
         <div class="mb-3">
           <label for="ano" class="form-label">Año</label>
-          <input type="number" class="form-control" name="txtan" value="{{ old('txtan') }}">
+          <input type="numeric" class="form-control" name="txtan" value="{{ old('txtan') }}">
           <small class="text-danger fst-italic">{{ $errors->first('txtano') }}</small>
         </div>
 

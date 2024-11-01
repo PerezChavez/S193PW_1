@@ -39,6 +39,6 @@
 
 {{-- Pie de página --}}
     <footer class="bg-dark text-white text-center mt-5 p-3">
-        <p>Biblioteca Chavez &copy; {{ now()->format('d M Y') }}</p>
+        <p>Biblioteca Chavez &copy; {{ date('d M Y') }}</p>
     </footer>
 </html>
