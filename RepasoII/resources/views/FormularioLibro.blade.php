@@ -11,20 +11,21 @@
   <x-Alert tipo="success">{{session('exito')}}</x-Alert>
   @endif
 
-  @session('exito')
+   @session('exito')
   <x-Alert tipo="warning">{{$value}}</x-Alert>
   @endsession 
 
-  @session('exito')
-  <script>
-  Swal.fire({
-    title: "Respuesta Servidor!", 
-    text: "{{$value}}",
-    icon: "success"
-  });
-  </script>
-  @endsession
 
+  @session('exito')
+  {! <script>
+  Swal.fire({
+  title: "Respuesta Servidor!",
+  text: "{{$value}}",
+  icon: "success"
+  });
+  </script>!}
+   @endsession
+   
   <div class="card font-monospace">
 
     <div class="card-header fs-5 text-center text-primary">
