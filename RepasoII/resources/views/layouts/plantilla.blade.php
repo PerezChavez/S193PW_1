@@ -15,17 +15,17 @@
 {{-- inicia navbar --}}
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" >Biblioteca Chavez</a>
+      <a class="navbar-brand" >{{__('Biblioteca Chavez')}}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route('rutainicio') }}" >Inicio</a>
+            <a class="nav-link" aria-current="page" href="{{ route('rutainicio') }}" >{{__('Inicio')}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('rutaform')?'text-warning':'' }}" href="" >Registro Libro</a>
+            <a class="nav-link {{ request()->routeIs('rutaform')?'text-warning':'' }}" href="" >{{__('Registro de Libro')}}</a>
           </li>
         </ul>
       </div>
@@ -39,6 +39,6 @@
 
 {{-- Pie de página --}}
     <footer class="bg-dark text-white text-center mt-5 p-3">
-        <p>Biblioteca Chavez &copy; {{ date('d M Y') }}</p>
+        <p>{{__('Biblioteca Chavez')}} &copy; {{ date('d M Y') }}</p>
     </footer>
 </html>
