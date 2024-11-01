@@ -19,5 +19,5 @@ Route::get('/', [ControladorVistas::class, 'inicio'])->name('rutainicio');
 
 Route::get('/form', [ControladorVistas::class, 'FormularioLibro'])->name('rutaform');
 
-Route::post('/enviarLibro', [ControladorVistas::class, 'procesarLibro'])->name('rutaEnviar');  //la parte de name no es importante cuando es post
+Route::post('/enviar', [ControladorVistas::class, 'procesarLibro'])->name('rutaEnviar');  //la parte de name no es importante cuando es post
 

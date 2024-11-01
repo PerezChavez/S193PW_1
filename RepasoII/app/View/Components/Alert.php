@@ -10,7 +10,7 @@ class Alert extends Component
 {
     public $tipo;
 
-    public function __construct()
+    public function __construct($tipo)
     {
         $this->tipo=$tipo;
     }
