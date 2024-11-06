@@ -22,9 +22,9 @@ class validarPrenda extends FormRequest
     public function rules(): array
     {
         return [
-            'txtprenda'='required',
-            'txtColor'='required',
-            'txtCantidad'='required'
+            'txtprenda'=>'required|string',
+            'txtColor'=>'required|string',
+            'txtCantidad'=>'required|inter|number'
         ];
     }
 }

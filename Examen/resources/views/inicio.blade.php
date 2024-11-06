@@ -6,16 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/inicio" method="POST">
+
+    @session ('exito')
+    {! <script>
+        Swal.fire({
+            title: "Éxito";
+            text: "{{$value}}";
+            icon:"succes"
+        });
+       </script> !}
+    @endsession
+    <form action="/" method="GET">
         <h1>Registro de prendas</h1>
         <label>Prenda: </label>
-        <input type='text' class='form-control' name='txtprenda'></input>
+        <input type='text' class='form-control'required name='txtprenda'></input>
 
         <label>Color: </label>
-        <input type='text' class='form-control' name='txtColor'></input>
+        <input type='text' class='form-control' required name='txtColor'></input>
 
         <label>Cantidad: </label>
-        <input type='number' class='form-control' name='txtCantidad'></input>
+        <input type='number' class='form-control' required name='txtCantidad'></input>
 
         <button type="submit">Guardar prenda</button>
         
