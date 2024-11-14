@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\validadorCliente;
-use Illuminate\Support\Carbon\Carbon;
 
 class ControladorVistas extends Controller
 {
@@ -16,12 +15,12 @@ class ControladorVistas extends Controller
 
     }
 
-    /* public function formulario()
+    public function formulario()
     {
-            return view ('formulario');
+        return view ('formulario');
 
     }
- */    public function consulta()
+    public function consulta()
     {
         return view ('clientes');
 
