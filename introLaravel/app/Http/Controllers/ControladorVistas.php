@@ -23,7 +23,7 @@ class ControladorVistas extends Controller
     }
  */    public function consulta()
     {
-        return view ('clientes');
+       
 
     }
 

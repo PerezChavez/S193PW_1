@@ -30,11 +30,13 @@ Route::get('/', [ControladorVistas::class, 'home'])->name('rutainicio');
 
 
 
-Route::get('/consultar', [ControladorVistas::class, 'consulta'])->name('rutaclientes');
+//Route::get('/consultar', [ControladorVistas::class, 'consulta'])->name('rutaclientes');
 
-Route::post('/enviarCliente', [ControladorVistas::class, 'procesarCliente'])->name('rutaEnviar');  //la parte de name no es importante cuando es post
+//Route::post('/enviarCliente', [ControladorVistas::class, 'procesarCliente'])->name('rutaEnviar');  //la parte de name no es importante cuando es post
 
 
 /* RUTAS PARA CONTROLADOR CLIENTECONTRALADOR */
 
 Route::get('/cliente/create', [clienteController::class, 'create'])->name('rutaform');
+Route::post('/cliente', [clienteController::class, 'store'])->name('rutaEnviar');  
+Route::get('/cliente', [clienteController::class, 'index'])->name('rutaclientes');
