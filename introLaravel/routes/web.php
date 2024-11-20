@@ -27,7 +27,7 @@ Route::view('/component','componentes')->name('rutacomponent');
 
 Route::get('/', [ControladorVistas::class, 'home'])->name('rutainicio');
 
-
+//Route::get('/actualizar',[ControladorVistas::class, 'actualizar'])->name('rutaactualizar');
 
 
 //Route::get('/consultar', [ControladorVistas::class, 'consulta'])->name('rutaclientes');
@@ -40,3 +40,7 @@ Route::get('/', [ControladorVistas::class, 'home'])->name('rutainicio');
 Route::get('/cliente/create', [clienteController::class, 'create'])->name('rutaform');
 Route::post('/cliente', [clienteController::class, 'store'])->name('rutaEnviar');  
 Route::get('/cliente', [clienteController::class, 'index'])->name('rutaclientes');
+Route::get('/cliente/create', [clienteController::class, 'create'])->name('rutaform');
+Route::get('/actualizar',[ControladorVistas::class, 'actualizar'])->name('rutaactualizar');
+
+

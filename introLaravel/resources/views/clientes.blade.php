@@ -19,7 +19,7 @@
     </div>
 
     <div class="card-footer text-muted">
-      <button type="submit" class="btn btn-warning btn-sm">{{ __('Actualizar')}}</button>
+      <a type="submit" href="{{ route('rutaactualizar') }}" class="btn btn-warning btn-sm">{{ __('Actualizar')}}</a>
       <button type="submit" class="btn btn-danger btn-sm">{{ __('Eliminar')}}</button>
     </div>
 

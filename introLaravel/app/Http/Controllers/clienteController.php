@@ -67,7 +67,14 @@ class clienteController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        DB::table('clientes')->select([
+            "nombre"=>$request->select('txtnombre'),
+            "apellido"=>$request->select('txtapellido'),
+            "correo"=>$request->select('txtcorreo'),
+            "telefono"=>$request->select('txttelefono'),
+            
+        ]);
+
     }
 
     /**

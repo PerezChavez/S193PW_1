@@ -16,6 +16,12 @@ class ControladorVistas extends Controller
 
     }
 
+
+    public function actualizar()
+    {
+        return view('Actualizar');
+    }
+
     /* public function formulario()
     {
             return view ('formulario');
