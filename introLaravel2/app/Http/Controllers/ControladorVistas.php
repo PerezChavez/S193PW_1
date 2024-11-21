@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\validadorCliente;
-use Illuminate\Support\Carbon\Carbon;
 
 class ControladorVistas extends Controller
 {
@@ -16,20 +15,14 @@ class ControladorVistas extends Controller
 
     }
 
-
-    public function actualizar()
+    public function formulario()
     {
-        return view('Actualizar');
-    }
-
-     public function formulario()
-    {
-            return view ('formulario');
+        return view ('formulario');
 
     }
     public function consulta()
     {
-       
+        return view ('clientes');
 
     }
 
@@ -54,12 +47,9 @@ class ControladorVistas extends Controller
         //'txttelefono' =>'required|numeric',
         //  ]);
     $usuario= $peticion->input('txtnombre');
+
     session()->flash('exito', 'Se guardó el usuario:'.$usuario);
     return to_route('rutaform');
-
-
-
-    
 
     }
     

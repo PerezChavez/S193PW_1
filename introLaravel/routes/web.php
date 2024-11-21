@@ -28,8 +28,6 @@ Route::view('/component','componentes')->name('rutacomponent');
 Route::get('/', [ControladorVistas::class, 'home'])->name('rutainicio');
 
 //Route::get('/actualizar',[ControladorVistas::class, 'actualizar'])->name('rutaactualizar');
-
-
 //Route::get('/consultar', [ControladorVistas::class, 'consulta'])->name('rutaclientes');
 
 //Route::post('/enviarCliente', [ControladorVistas::class, 'procesarCliente'])->name('rutaEnviar');  //la parte de name no es importante cuando es post
@@ -37,10 +35,25 @@ Route::get('/', [ControladorVistas::class, 'home'])->name('rutainicio');
 
 /* RUTAS PARA CONTROLADOR CLIENTECONTRALADOR */
 
-Route::get('/cliente/create', [clienteController::class, 'create'])->name('rutaform');
+/*Route::get('/cliente/create', [clienteController::class, 'create'])->name('rutaform');
 Route::post('/cliente', [clienteController::class, 'store'])->name('rutaEnviar');  
 Route::get('/cliente', [clienteController::class, 'index'])->name('rutaclientes');
 Route::get('/cliente/create', [clienteController::class, 'create'])->name('rutaform');
 Route::get('/actualizar',[ControladorVistas::class, 'actualizar'])->name('rutaactualizar');
+//Route::get('/actualizar/{id}',[clienteController::class, 'edit'])->name('rutaactualizar');
+Route::post('/cliente', [clienteController::class, 'index'])->name('rutaConsulta'); 
+Route::put('/clientes/{id}', [clienteControlador::class, 'update'])->name('rutaActualizar');*/
+
+Route::get('/',[controladorVistas::class, 'home'])->name('rutainicio');
+Route::view('/component', 'componentes')->name('rutacomponentes');
+Route::post('/enviarCliente', [controladorVistas::class, 'procesarCliente'])->name('rutaEnviar');
+
+Route::get('/cliente/create', [clienteController::class, 'create'])->name('rutaform');
+Route::post('/cliente', [clienteController::class, 'store'])->name('enviaCliente');
+Route::get('/cliente', [clienteController::class, 'index'])->name('rutaclientes');
+
+Route::delete('/clientes/{id}', [clienteController::class, 'destroy'])->name('rutadestroy');
+Route::get('/clientes/{id}/edit', [clienteController::class, 'edit'])->name('rutaedit');
+Route::put('/clientes/{id}', [clienteController::class, 'update'])->name('rutaupdate');
 
 
