@@ -18,8 +18,7 @@
     @foreach ($consultaClientes as $cliente)
         <div class="card text-justify font-monospace mb-4">
             <div class="card-header fs-5 text-primary">
-                {{ $cliente->nombre }} {{ $cliente->apellido }}
-            </div>
+                {{ $cliente->nombre }}             </div>
             <div class="card-body">
                 <h5 class="fw-bold">{{ $cliente->correo }}</h5>
                 <h5 class="fw-medium">{{ $cliente->telefono }}</h5>
