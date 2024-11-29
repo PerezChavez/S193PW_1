@@ -23,7 +23,7 @@
         <h1 class="display-1">{{__('Bienvenido Turista')}}!</h1>
         <p>{{__('Presiona el boton para iniciar')}}..</p>
 
-       <a href="#" class="btn btn-primary">{{__('Ir al Registro')}} </a>       <!--ESTE EJEMPLO ES CON apodo--> 
+       <a href="{{route('cliente.create')}}" class="btn btn-primary">{{__('Ir al Registro')}} </a>       <!--ESTE EJEMPLO ES CON apodo--> 
         <!-- <a href="/form" class="btn btn-primary">Ir al Registro</a>  -->             <!-- ESTE EJEMPLO ES CON ruta -->
 </div>
     

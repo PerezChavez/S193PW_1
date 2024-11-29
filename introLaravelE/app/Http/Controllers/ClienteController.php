@@ -63,7 +63,8 @@ class ClienteController extends Controller
      */
     public function edit(cliente $cliente)
     {
-        //
+       // $cliente = cliente::findOrFail($cliente);
+        return view('FormularioUpdate',compact('cliente'));
     }
 
     /**
@@ -71,7 +72,16 @@ class ClienteController extends Controller
      */
     public function update(Request $request, cliente $cliente)
     {
-        //
+        $cliente->nombre =$request->input('txtnombre');
+        $cliente->apellido =$request->input('txtapellido');
+        $cliente->correo =$request->input('txtcorreo');
+        $cliente->telefono =$request->input('txttelefono');
+        $cliente->save();
+
+    
+        $msj = $request->input('txtnombre');
+        session()->flash('exito', 'Se actualizó el cliente de forma correcta: ' .$msj);
+        return redirect()->back();
     }
 
     /**
@@ -79,6 +89,8 @@ class ClienteController extends Controller
      */
     public function destroy(cliente $cliente)
     {
-        //
-    }
+        $cliente->delete();
+        session()->flash('exito', 'Se eliminó el cliente de forma correcta:');
+        return redirect()->back();
+   }
 }
